@@ -11,7 +11,8 @@
 * a2c_ppo_acktr/algo/test.py - whole file
 * a2c_ppo_acktr/algo/main.py - added tensorboard writing capabilities
 * a2c_ppo_acktr/algo/test.py - for testing model [whole code]
-* a2c_ppo_acktr/algo/envs.py - whole code
+* a2c_ppo_acktr/algo/env/basic_envs.py - whole code
+* a2c_ppo_acktr/models/*.py - whole code
 
 ## Requirements
 
