@@ -29,29 +29,21 @@ conda install pytorch torchvision -c soumith
 pip install -r requirements.txt
 ```
 
-
-## Visualization/Test
-
-In order to visualize the results use ```visualize.ipynb```.
-
-
 ## Training
 
 #### A2C
 
 ```bash
-python main.py --env-name "PongNoFrameskip-v4"
+
+
+python main.py --algo a2c  --num-processes 10 --log-interval 100 --recurrent-policy --use-linear-lr-decay --num-env-steps 100000000 --num-steps 25 --use-gae --save_name pos --rec 64 --fc '64 64 64' --lr 5e-4 --entropy-coef 0 --value-loss-coef 1 --seed 13
+
 ```
 
-#### PPO
+
+### Enjoy
 
 ```bash
-python main.py --env-name "PongNoFrameskip-v4" --algo ppo --use-gae --lr 2.5e-4 --clip-param 0.1 --value-loss-coef 0.5 --num-processes 8 --num-steps 128 --num-mini-batch 4 --log-interval 1 --use-linear-lr-decay --entropy-coef 0.01
+python test.py 
 ```
-
-
-
-
-### Result
-
 
