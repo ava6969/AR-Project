@@ -1,0 +1,6 @@
+gym
+matplotlib
+pybullet
+stable-baselines3
+mujoco-py==2.0.2.5
+pybullet
